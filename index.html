@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="sign-up-container">
+		<div class="wrapper-container">
+			<div class="image-container">
+				<img src="./assets/images/bg.jpg" alt="welcome-img">
+			</div>
+			<div class="contacts-container">
+				<div class="name-container">
+					<label for='name'>Name</label>
+					<input type="text" class="name-input" placeholder="Enter your name" id='name'>
+				</div>
+				<div class="gender-container">
+					<h5>Gender</h5>
+					<div class="info-gender">
+						<div class="male">
+							<i class="flaticon-male active"></i><input type="radio" class="male-radio" name="gender" id='male' val='male'> Male
+						</div>
+						<div class="female">
+							<i class="flaticon-femenine"></i><input type="radio" class="female-radio" name="gender" id='female' val='female'> Female
+						</div>
+					</div>
+				</div>
+				<div class="birth-container">
+					<label for='date'>Date of Birth</label>
+					<input placeholder="Enter your birthday" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+				</div>
+				<div class="email-container">
+					<label for='email'>Email</label>
+					<input type="email" class="email-input" placeholder="Enter your email" id='email' required />
+				</div>
+				<div class="city-container">
+					<label for='city'>City</label>
+					<input type="text" class="city-input" placeholder="Enter your city" id='city'>
+				</div>
+				<div class="country-container">
+					<label for='country'>Country</label>
+					<input type="text" class="country-input" placeholder="Enter your country" id="country" />
+				</div>
+				<div class="subscription-container">
+					<h5>Subscription</h5>
+					<!-- <input type="radio" name="subscription" class="subscription-bronze" /> --><span class="bronze">Bronze</span>
+					<!-- <input type="radio" name="subscription" class="subscription-silver" /> --><span class="silver">Silver</span>
+					<!-- <input type="radio" name="subscription" class="subscription-gold" /> --><span class="gold">Gold</span>
+				</div>
+				<div class="submit-container">
+					<button type="button" class="cancel-button">Cancel</button>
+					<button type="submit" class="save-button">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src='./js/main.js'></script>
+</body>
+</html>

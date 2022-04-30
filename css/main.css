@@ -1,0 +1,216 @@
+@import './font/flaticon.css';
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #F7F7F7;
+	font-family: 'Roboto', sans-serif;
+}
+
+.male{
+	margin: 0 15px;
+}
+
+.sign-up-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.wrapper-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 15px;
+-webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+}
+.image-container{
+	height: 583px;
+}
+
+.image-container img{
+	width: 380px;
+	border-radius: 15px 0 0 15px;
+	background-size: cover;
+	pointer-events: none;
+}
+
+.contacts-container{
+	height: 100%;
+	padding: 0 64px 0 128px;
+	background-color: white;
+}
+
+.name-container, .gender-container, .email-container, .birth-container, .city-container, .country-container, .subscription-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.subscription-container{
+	margin: 50px 0;
+}
+
+label, h5{
+	color: #7B7E80;
+	font-weight: 400;
+	margin: 10px 50px 10px 0;
+	font-size: 12px;
+}
+
+label:hover{
+	cursor: pointer;
+}
+
+input[type='radio']{
+	display: none;
+}
+
+.info-gender{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+input{
+	width: 270px;
+	padding: 10px 20px;
+	border: 2px solid #DFE7EA;
+	border-radius: 3px;
+	background-color: #FCFCFD;
+	font-family: 'Roboto', sans-serif;
+}
+
+input:focus, button{
+	outline: none;
+}
+
+input[type='date']{
+	color: #C8D3DC;
+}
+
+input[type='date']:active, input, input[type='date']:focus{
+	color: black;
+}
+
+input::placeholder{
+	color: #C8D3DC;
+}
+
+span{
+	font-size: 12px;
+	position: relative;
+}
+
+span:before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	width: 0px;
+	height: 2px;
+	background-color: #DFE7EA;
+	transition: width 0.2s linear;
+}
+span:after{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	right: 50%;
+	width: 0px;
+	height: 2px;
+	background-color: #C1F1FE;
+	transition: width 0.2s linear;
+}
+
+span:hover:after, span:hover:before{
+	width: 60%;
+}
+
+span:hover{
+	cursor: pointer;
+}
+
+.bronze{
+	color: #FBB03B;
+}
+
+.silver{
+	color: #998675;
+}
+
+.gold{
+	color: #FCF14C;
+}
+
+.submit-container{
+	float: right;
+}
+
+.submit-container button{
+	border: 0;
+	padding: 10px 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.cancel-button{
+	color: #818587;
+	background-color: #F5F8F9;
+}
+
+.cancel-button:hover{
+	background-color: #E8ECED;
+	color: #6A52A0;
+	cursor: pointer;
+}
+
+.save-button{
+	color: white;
+	background-color: #95EB75;
+}
+
+.save-button:hover{
+	background-color: white;
+	color: #6A52A0;
+	cursor: pointer;
+}
+
+.male, .female{
+	color: #7B7E80;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.flaticon-male:before, .flaticon-femenine:before{
+	transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.male:hover .flaticon-male:before, .female:hover .flaticon-femenine:before{
+	background-color: #E8E8E9 !important;
+	color: white;
+}
+
+.male:hover, .female:hover{
+	cursor: pointer;
+}
+
+.active:before{
+  background-color: #95EB75;
+  color: white;
+}
+
+.active-subscription:before, .active-subscription:after{
+	background-color: black;
+	width: 60%;
+}
